@@ -1,0 +1,45 @@
+{
+  "name": "xora-theme",
+  "displayName": "Xora",
+  "description": "A minimal theme with purple accents for Visual Studio Code",
+  "version": "0.3.0",
+  "engines": {
+    "vscode": "^1.76.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "publisher": "nexoralabs",
+  "extensionKind": [
+    "ui",
+    "workspace"
+  ],
+  "scripts": {
+    "build:theme": "tsx src/generate-theme.ts",
+    "watch:theme": "nodemon --watch src --exec tsx src/generate-theme.ts"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^4.1.1",
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Xora",
+        "uiTheme": "vs-dark",
+        "path": "./themes/xora.json"
+      },
+      {
+        "label": "Xora Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/xora-dark.json"
+      },
+      {
+        "label": "Xora Light",
+        "uiTheme": "vs",
+        "path": "./themes/xora-light.json"
+      }
+    ]
+  }
+}
