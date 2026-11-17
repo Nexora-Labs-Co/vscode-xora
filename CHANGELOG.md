@@ -13,7 +13,7 @@
 
 ---
 
-## Vscode Xora 0.1
+## Vscode Xora 0.0.1
 
 ### 2026-11-17
 
